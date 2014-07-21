@@ -1,0 +1,158 @@
+<title>fancy text converter</title>
+<style>
+    /* Check out this high class style sheet */
+    body {
+        font-family: Verdana, Geneva, sans-serif;
+        background-color:gray;
+    }
+    #cool {
+        background-color:gray;
+        width: 700px;
+        height: 400px;
+        font-size: 1em;
+        border: 100px solid white;
+    }
+    .headerBoard {
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    {
+        color: blue;
+    }
+    #bubblecontainer {
+        width: 468px;
+        margin: 10px auto 0 auto;
+        border: 1px solid white;
+    }
+    #code {
+        background-color:white;
+        width: 465px;
+        font-size: 1em;
+        border: 1px solid white;
+    }
+    #codetwo {
+        background-color:white;
+        width: 465px;
+        font-size: 1em;
+        border: 1px solid white;
+    }
+    #bubbles {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #0CF;
+        border: 1px solid #0CF;
+        width:466px;
+    }
+    .text {
+        width:468px;
+        margin: 5px auto 0 auto;
+    }
+    .content {
+        width:100%;
+        text-align:center;
+    }
+    h1 {
+        color: white;
+        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        font-size: 2.2em;
+    }
+    .trivia {
+        position: absolute;
+        top:90px;
+        right:5px;
+    }
+    .trivia td {
+        background-color: #0CF;
+        font-size: .9em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .trivia td h3 {
+        margin: 4px 0 4px 0;
+    }
+    #search h4 {
+        padding: 0;
+        margin: 3px 0 0 0;
+    }
+}
+</style>
+<script type="text/javascript">
+    function decode() {
+        var theData = document.getElementById('codetwo').value;
+        theData = theData.replace(/hello/g, "Greetings");
+        theData = theData.replace(/hi/g, "Greetings");
+        theData = theData.replace(/cheesycheesecheese/g, "Click the Cheese");
+        theData = theData.replace(/now/g, "at this very moment in time");
+        theData = theData.replace(/computer/g, "Highly processing device that is capable of manipulating the electromagnetic spectrum and in which is capable of thinking various things and communicating wirelessly and wired if wanted to do so");
+        theData = theData.replace(/car/g, " automatic mobile device that can store various things and transport them using fuel in which can be dependant on what engine the device uses such as gasoline electricity dead animals and many more");
+        theData = theData.replace(/nonsense/g, "Poppycock");
+        theData = theData.replace(/nah/g, "Poppycock");
+        theData = theData.replace(/fruit/g, "Produce");
+        theData = theData.replace(/vegetables/g, "Produce");
+        theData = theData.replace(/shirt/g, "Clothing warn around a humans torso");
+        theData = theData.replace(/tie/g, "Fancy cloth fixating onto a point warn with a suit");
+        theData = theData.replace(/normal/g, "Informal");
+        theData = theData.replace(/regular/g, "Casual");
+        theData = theData.replace(/swagy/g, "Hipster");
+        theData = theData.replace(/hipster/g, "One with a cool look fitting the time period");
+        theData = theData.replace(/ball/g, "sphere");
+        theData = theData.replace(/love/g, "Tenderness");
+        theData = theData.replace(/flying/g, "floating and levitating but also had the abilty to alter its own altitude and direction it is levitating hovering floating in");
+        theData = theData.replace(/book/g, "Compilation of words");
+
+        theData = theData.replace(/woman/g, "Female human of age older than 18");
+        theData = theData.replace(/eye/g, "Spherical object capable of processing a certain range of waves in the electromagnetic spectrum");
+        theData = theData.replace(/ear/g, "Body part allowing you to comprehend vibrations in the air caused by movement");
+        theData = theData.replace(/child/g, "Any gender human of young age");
+        theData = theData.replace(/baby/g, "Any gender human of extremely young age ");
+        theData = theData.replace(/calculator/g, "Hand held computing device capable of processing numbers in various ways");
+        theData = theData.replace(/iphone/g, "A hand held computing device incompetent of running many applications or other various tasks without error");
+        theData = theData.replace(/ipod/g, "Another hand held computing device incompetent of running many applications or other various tasks without error");
+        theData = theData.replace(/ipad/g, "An even bigger ignorant hand held computing device incompetent of running many applications or other various tasks without error");
+        theData = theData.replace(/macintosh/g, "**%*$@**% do not say its really weak and insolent name!!!");
+        theData = theData.replace(/Microsoft/g, "Microsoft, the glorious makers of the best modern technology and is better than **%*$@**% do not say its really weak and insolent name!!!");
+        theData = theData.replace(/microsoft/g, "Microsoft");
+
+        theData = theData.replace(/human/g, "Animal with the ability to walk on two legs and carry out numerous more tasks than any other animal");
+        theData = theData.replace(/mouth/g, "Facial muscle showing expressions of emotion and ability to inssert various energy sustaining material into the system");
+    theData = theData.replace(/object/g,"matter");
+		theData = theData.replace(/toy/g,"form of matter ment to be played with");
+		theData = theData.replace(/play/g,"conjure in fun activities");
+
+
+
+
+
+        theData = theData.replace(/\n/g, "");
+
+
+        document.getElementById('decoded').innerHTML = theData;
+
+    }
+</script>
+</head>
+<body>
+    <!-- stop looking at my source! -->
+    <center>
+        <div id="cool" align="center">
+            <div class="content">
+                
+<h1>fancy text converter</h1>
+
+                <div class="content">
+                    
+<h1>boring word</h1>
+
+                    <textarea onkeyup="decode();" rows="1" onchange="decode();" id="codetwo"></textarea>
+                    <div id="bubblecontainer">
+                        <div id="decoded" style="color:#000000"></div>
+                    </div>
+                </div>
+            </div>by:Steven D. and Sportsquid
+            <br>Warning! not everything is accurate, not all words will work like homophones/homonyms and also please use lowercase or it will not work</center>
+    <br>
+    <br>
+</body>
+
+</html>

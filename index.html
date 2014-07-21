@@ -10,7 +10,7 @@
         width: 350px;
         height: 400px;
         font-size: 1em;
-        border: 100px solid white;
+        border: 100px solid gray;
     }
     .headerBoard {
         text-align: center;
@@ -21,19 +21,20 @@
         color: blue;
     }
     #bubblecontainer {
-        width: 230px;
+        width: 200px;
         margin: 10px auto 0 auto;
         border: 1px solid white;
+  background-color:white;
     }
     #code {
         background-color:white;
-        width: 230px;
+        width: 465px;
         font-size: 1em;
         border: 1px solid white;
     }
     #codetwo {
         background-color:white;
-        width: 230px;
+        width: 200px;
         font-size: 1em;
         border: 1px solid white;
     }
@@ -42,16 +43,19 @@
         margin-right: auto;
         background-color: #0CF;
         border: 1px solid #0CF;
-        width:230px;
+        width:466px;
     }
     .text {
-        width:230px;
+        width:468px;
         margin: 5px auto 0 auto;
     }
     .content {
         width:100%;
         text-align:center;
     }
+ .dec {
+     width:200px;
+ }
     h1 {
         color: white;
         text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -101,7 +105,7 @@
         theData = theData.replace(/flying/g, "floating and levitating but also had the abilty to alter its own altitude and direction it is levitating hovering floating in");
         theData = theData.replace(/book/g, "Compilation of words");
 
-       
+        theData = theData.replace(/woman/g, "Female human of age older than 18");
         theData = theData.replace(/eye/g, "Spherical object capable of processing a certain range of waves in the electromagnetic spectrum");
         theData = theData.replace(/ear/g, "Body part allowing you to comprehend vibrations in the air caused by movement");
         theData = theData.replace(/child/g, "Any gender human of young age");
@@ -113,15 +117,12 @@
         theData = theData.replace(/macintosh/g, "**%*$@**% do not say its really weak and insolent name!!!");
         theData = theData.replace(/Microsoft/g, "Microsoft, the glorious makers of the best modern technology and is better than **%*$@**% do not say its really weak and insolent name!!!");
         theData = theData.replace(/microsoft/g, "Microsoft");
-        theData = theData.replace(/mister/g, "sir");
-		theData = theData.replace(/paper/g, "parchment");
-		theData = theData.replace(/talk/g, "commence in a sequence of dialogue");
+
         theData = theData.replace(/human/g, "Animal with the ability to walk on two legs and carry out numerous more tasks than any other animal");
         theData = theData.replace(/mouth/g, "Facial muscle showing expressions of emotion and ability to inssert various energy sustaining material into the system");
-        theData = theData.replace(/object/g, "matter");
-       
-        theData = theData.replace(/play/g, "conjure in fun activities");
-		
+    theData = theData.replace(/object/g,"matter");
+  theData = theData.replace(/toy/g,"form of matter ment to be played with");
+  theData = theData.replace(/play/g,"conjure in fun activities");
 
 
 
@@ -147,15 +148,18 @@
                     
 <h1>boring word</h1>
 
-                    <textarea onkeyup="decode();" rows="1" onchange="decode();" id="codetwo"></textarea>
-                    <div id="bubblecontainer">
-                        <div id="decoded" style="color:#000000"></div>
+                    <textarea onkeyup="decode();" rows="1" cols="1" width="200" onchange="decode();" id="codetwo"></textarea>
+                    
+     <div id="bubblecontainer" align="center">
+                    <div id="decoded" align="center"></div>
                     </div>
+     
                 </div>
-            </div>by:Steven D. and Sportsquid
+            </div>by:specialsteven and Sportsquid
             <br>Warning! not everything is accurate, not all words will work like homophones/homonyms and also please use lowercase or it will not work</center>
     <br>
     <br>
 </body>
 
 </html>
+Steven Dimov

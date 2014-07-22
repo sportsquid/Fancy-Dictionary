@@ -7,10 +7,10 @@
     }
     #cool {
         background-color:gray;
-        width: 350px;
+        width: 250px;
         height: 400px;
         font-size: 1em;
-        border: 100px solid gray;
+        border: 50px solid gray;
     }
     .headerBoard {
         text-align: center;
@@ -24,7 +24,7 @@
         width: 200px;
         margin: 10px auto 0 auto;
         border: 1px solid white;
-  background-color:white;
+        background-color:white;
     }
     #code {
         background-color:white;
@@ -53,9 +53,9 @@
         width:100%;
         text-align:center;
     }
- .dec {
-     width:200px;
- }
+    .dec {
+        width:200px;
+    }
     h1 {
         color: white;
         text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -84,49 +84,51 @@
 <script type="text/javascript">
     function decode() {
         var theData = document.getElementById('codetwo').value;
-        theData = theData.replace(/hello/g, "Greetings");
-        theData = theData.replace(/hi/g, "Greetings");
-        theData = theData.replace(/cheesycheesecheese/g, "Click the Cheese");
-        theData = theData.replace(/now/g, "at this very moment in time");
-        theData = theData.replace(/computer/g, "Highly processing device that is capable of manipulating the electromagnetic spectrum and in which is capable of thinking various things and communicating wirelessly and wired if wanted to do so");
-        theData = theData.replace(/car/g, " automatic mobile device that can store various things and transport them using fuel in which can be dependant on what engine the device uses such as gasoline electricity dead animals and many more");
-        theData = theData.replace(/nonsense/g, "Poppycock");
-        theData = theData.replace(/nah/g, "Poppycock");
-        theData = theData.replace(/fruit/g, "Produce");
-        theData = theData.replace(/vegetables/g, "Produce");
-        theData = theData.replace(/shirt/g, "Clothing warn around a humans torso");
-        theData = theData.replace(/tie/g, "Fancy cloth fixating onto a point warn with a suit");
-        theData = theData.replace(/normal/g, "Informal");
-        theData = theData.replace(/regular/g, "Casual");
-        theData = theData.replace(/swagy/g, "Hipster");
-        theData = theData.replace(/hipster/g, "One with a cool look fitting the time period");
-        theData = theData.replace(/ball/g, "sphere");
-        theData = theData.replace(/love/g, "Tenderness");
-        theData = theData.replace(/flying/g, "floating and levitating but also had the abilty to alter its own altitude and direction it is levitating hovering floating in");
-        theData = theData.replace(/book/g, "Compilation of words");
+        theData = theData.replace(/Hello/g, "greetings");
+        theData = theData.replace(/Hi/g, "greetings");
+        theData = theData.replace(/Cheesycheesecheese/g, "click the cheese");
+        theData = theData.replace(/Now/g, "at this very moment in time");
+        theData = theData.replace(/Computer/g, "highly processing device that is capable of manipulating the electromagnetic spectrum and in which is capable of thinking various things and communicating wirelessly and wired if wanted to do so");
+        theData = theData.replace(/Car/g, " automatic mobile device that can store various things and transport them using fuel in which can be dependant on what engine the device uses such as gasoline electricity dead animals and many more");
+        theData = theData.replace(/Nonsense/g, "poppycock");
+        theData = theData.replace(/Nah/g, "poppycock");
+        theData = theData.replace(/Fruit/g, "produce");
+        theData = theData.replace(/Vegetables/g, "produce");
+        theData = theData.replace(/Shirt/g, "clothing warn around a humans torso");
+        theData = theData.replace(/Tie/g, "fancy cloth fixating onto a point warn with a suit");
+        theData = theData.replace(/Normal/g, "informal");
+        theData = theData.replace(/Regular/g, "casual");
+        theData = theData.replace(/Swagy/g, "hipster");
+        theData = theData.replace(/Hipster/g, "one with a cool look fitting the time period");
+        theData = theData.replace(/Ball/g, "sphere");
+        theData = theData.replace(/Love/g, "tenderness");
+        theData = theData.replace(/Flying/g, "floating and levitating but also had the ability to alter its own altitude and direction it is levitating hovering floating in");
+        theData = theData.replace(/Book/g, "compilation of words");
 
-        theData = theData.replace(/woman/g, "Female human of age older than 18");
-        theData = theData.replace(/eye/g, "Spherical object capable of processing a certain range of waves in the electromagnetic spectrum");
-        theData = theData.replace(/ear/g, "Body part allowing you to comprehend vibrations in the air caused by movement");
-        theData = theData.replace(/child/g, "Any gender human of young age");
-        theData = theData.replace(/baby/g, "Any gender human of extremely young age ");
-        theData = theData.replace(/calculator/g, "Hand held computing device capable of processing numbers in various ways");
-        theData = theData.replace(/iphone/g, "A hand held computing device incompetent of running many applications or other various tasks without error");
-        theData = theData.replace(/ipod/g, "Another hand held computing device incompetent of running many applications or other various tasks without error");
-        theData = theData.replace(/ipad/g, "An even bigger ignorant hand held computing device incompetent of running many applications or other various tasks without error");
+        theData = theData.replace(/Woman/g, "female human of age older than 18");
+        theData = theData.replace(/Eye/g, "spherical object capable of processing a certain range of waves in the electromagnetic spectrum");
+        theData = theData.replace(/Ear/g, "body part allowing you to comprehend vibrations in the air caused by movement");
+        theData = theData.replace(/Child/g, "any gender human of young age");
+        theData = theData.replace(/Baby/g, "any gender human of extremely young age ");
+        theData = theData.replace(/Calculator/g, "hand held computing device capable of processing numbers in various ways");
+        theData = theData.replace(/iphone/g, "a hand held computing device incompetent of running many applications or other various tasks without error");
+        theData = theData.replace(/ipod/g, "hand held computing device incompetent of running many applications or other various tasks without error");
+        theData = theData.replace(/ipad/g, "gigantic ignorant hand held computing device incompetent of running many applications or other various tasks without error");
         theData = theData.replace(/macintosh/g, "**%*$@**% do not say its really weak and insolent name!!!");
         theData = theData.replace(/Microsoft/g, "Microsoft, the glorious makers of the best modern technology and is better than **%*$@**% do not say its really weak and insolent name!!!");
         theData = theData.replace(/microsoft/g, "Microsoft");
 
-        theData = theData.replace(/human/g, "Animal with the ability to walk on two legs and carry out numerous more tasks than any other animal");
-        theData = theData.replace(/mouth/g, "Facial muscle showing expressions of emotion and ability to inssert various energy sustaining material into the system");
-    theData = theData.replace(/object/g,"matter");
-  theData = theData.replace(/toy/g,"form of matter ment to be played with");
-  theData = theData.replace(/play/g,"conjure in fun activities");
+        theData = theData.replace(/Human/g, "animal with the ability to walk on two legs and carry out numerous more tasks than any other animal");
+        theData = theData.replace(/Mouth/g, "facial muscle showing expressions of emotion and ability to insert various energy sustaining material into the system");
+        theData = theData.replace(/Object/g, "matter");
+        theData = theData.replace(/Toy/g, "form of matter meant to be played with");
+        theData = theData.replace(/Play/g, "conjure in fun activities");
 
-
-
-
+        theData = theData.replace(/Waffle/g, "lattice shaped breakfast pastry");
+        theData = theData.replace(/Apple/g, "oblong red produce");
+        theData = theData.replace(/Banana/g, "long Yellow crescent form of produce");
+        theData = theData.replace(/Watermelon/g, "red oblong sphere covered in a green inedible layer");
+        theData = theData.replace(/Make/g, "conjure");
 
         theData = theData.replace(/\n/g, "");
 
@@ -142,18 +144,16 @@
         <div id="cool" align="center">
             <div class="content">
                 
-<h1>fancy text converter</h1>
+<h1>Fancy Text Converter</h1>
 
                 <div class="content">
                     
-<h1>boring word</h1>
+<h1>Enter Boring Word:</h1>
 
                     <textarea onkeyup="decode();" rows="1" cols="1" width="200" onchange="decode();" id="codetwo"></textarea>
-                    
-     <div id="bubblecontainer" align="center">
-                    <div id="decoded" align="center"></div>
+                    <div id="bubblecontainer" align="center">
+                        <div id="decoded" align="center"></div>
                     </div>
-     
                 </div>
             </div>by:specialsteven and Sportsquid
             <br>Warning! not everything is accurate, not all words will work like homophones/homonyms and also please use lowercase or it will not work</center>
@@ -162,4 +162,3 @@
 </body>
 
 </html>
-Steven Dimov

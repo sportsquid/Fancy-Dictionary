@@ -1,0 +1,1238 @@
+<title>fancy text converter</title>
+<style>
+    /* Check out this high class style sheet */
+    body {
+        font-family: Verdana, Geneva, sans-serif;
+        background-color:gray;
+    }
+    #cool {
+        background-color:gray;
+        width: 250px;
+        height: 400px;
+        font-size: 1em;
+        border: 50px solid gray;
+    }
+    .headerBoard {
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    {
+        color: blue;
+    }
+    #bubblecontainer {
+        width: 200px;
+        margin: 10px auto 0 auto;
+        border: 1px solid white;
+        background-color:white;
+    }
+    #code {
+        background-color:white;
+        width: 465px;
+        font-size: 1em;
+        border: 1px solid white;
+    }
+    #codetwo {
+        background-color:white;
+        width: 200px;
+        font-size: 1em;
+        border: 1px solid white;
+    }
+    #bubbles {
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #0CF;
+        border: 1px solid #0CF;
+        width:466px;
+    }
+    .text {
+        width:468px;
+        margin: 5px auto 0 auto;
+    }
+    .content {
+        width:100%;
+        text-align:center;
+    }
+    .dec {
+        width:200px;
+    }
+    h1 {
+        color: white;
+        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        font-size: 2.2em;
+    }
+    .trivia {
+        position: absolute;
+        top:90px;
+        right:5px;
+    }
+    .trivia td {
+        background-color: #0CF;
+        font-size: .9em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .trivia td h3 {
+        margin: 4px 0 4px 0;
+    }
+    #search h4 {
+        padding: 0;
+        margin: 3px 0 0 0;
+    }
+}
+</style>
+<script type="text/javascript">
+    function decode() {
+	var theData = document.getElementById('codetwo').value;
+	var split = theData.split(" ");
+	for (i = 0; i < split.length; i++) {
+        switch (split[i]) {
+//Hello - Greetings
+case 'hello':
+case 'Hello':
+    split[i] = "greetings";
+    break;
+case 'hello,':
+case 'Hello,':
+    split[i] = "greetings,";
+    break;
+case 'hello.':
+case 'Hello.':
+    split[i] = "greetings.";
+    break;
+case 'hello!':
+case 'Hello!':
+    split[i] = "greetings!";
+    break;
+case 'hello?':
+case 'Hello?':
+    split[i] = "greetings?";
+    break;
+case 'hello:':
+case 'Hello:':
+    split[i] = "greetings:";
+    break;
+		
+//Hi - Greetings
+case 'hi':
+case 'Hi':
+    split[i] = "greetings";
+    break;
+case 'hi,':
+case 'Hi,':
+    split[i] = "greetings,";
+    break;
+case 'hi.':
+case 'Hi.':
+    split[i] = "greetings.";
+    break;
+case 'hi!':
+case 'Hi!':
+    split[i] = "greetings!";
+    break;
+case 'hi?':
+case 'Hi?':
+    split[i] = "greetings?";
+    break;
+case 'hi:':
+case 'Hi:':
+    split[i] = "greetings:";
+    break;
+
+//Cheesycheesecheese - click the cheese
+case 'cheesycheesecheese':
+case 'Cheesycheesecheese':
+    split[i] = "click the cheese";
+    break;
+case 'cheesycheesecheese,':
+case 'Cheesycheesecheese,':
+    split[i] = "click the cheese,";
+    break;
+case 'cheesycheesecheese.':
+case 'Cheesycheesecheese.':
+    split[i] = "click the cheese.";
+    break;
+case 'cheesycheesecheese!':
+case 'Cheesycheesecheese!':
+    split[i] = "click the cheese!";
+    break;
+case 'cheesycheesecheese?':
+case 'Cheesycheesecheese?':
+    split[i] = "click the cheese?";
+    break;
+case 'cheesycheesecheese:':
+case 'Cheesycheesecheese:':
+    split[i] = "click the cheese:";
+    break;
+	
+//Now - at this very moment in time
+case 'now':
+case 'Now':
+    split[i] = "at this very moment in time";
+    break;
+case 'now,':
+case 'Now,':
+    split[i] = "at this very moment in time,";
+    break;
+case 'now.':
+case 'Now.':
+    split[i] = "at this very moment in time.";
+    break;
+case 'now!':
+case 'Now!':
+    split[i] = "at this very moment in time!";
+    break;
+case 'now?':
+case 'Now?':
+    split[i] = "at this very moment in time?";
+    break;
+case 'now:':
+case 'Now:':
+    split[i] = "at this very moment in time:";
+    break;
+	
+//Computer - highly processing device that is capable of manipulating the electromagnetic spectrum and in which is capable of thinking various things and communicating wirelessly and wired if wanted to do so
+case 'computer':
+case 'Computer':
+    split[i] = "highly processing device that is capable of manipulating the electromagnetic spectrum and in which is capable of thinking various things and communicating wirelessly and wired if wanted to do so";
+    break;
+case 'computer,':
+case 'Computer,':
+    split[i] = "highly processing device that is capable of manipulating the electromagnetic spectrum and in which is capable of thinking various things and communicating wirelessly and wired if wanted to do so,";
+    break;
+case 'computer.':
+case 'Computer.':
+    split[i] = "highly processing device that is capable of manipulating the electromagnetic spectrum and in which is capable of thinking various things and communicating wirelessly and wired if wanted to do so.";
+    break;
+case 'computer!':
+case 'Computer!':
+    split[i] = "highly processing device that is capable of manipulating the electromagnetic spectrum and in which is capable of thinking various things and communicating wirelessly and wired if wanted to do so!";
+    break;
+case 'computer?':
+case 'Computer?':
+    split[i] = "highly processing device that is capable of manipulating the electromagnetic spectrum and in which is capable of thinking various things and communicating wirelessly and wired if wanted to do so?";
+    break;
+case 'computer:':
+case 'Computer:':
+    split[i] = "highly processing device that is capable of manipulating the electromagnetic spectrum and in which is capable of thinking various things and communicating wirelessly and wired if wanted to do so:";
+    break;
+	
+//Car - automatic mobile device that can store various things and transport them using fuel in which can be dependant on what engine the device uses such as gasoline electricity dead animals and many more
+case 'car':
+case 'Car':
+    split[i] = "automatic mobile device that can store various things and transport them using fuel in which can be dependant on what engine the device uses such as gasoline electricity dead animals and many more";
+    break;
+case 'car,':
+case 'Car,':
+    split[i] = "automatic mobile device that can store various things and transport them using fuel in which can be dependant on what engine the device uses such as gasoline electricity dead animals and many more,";
+    break;
+case 'car.':
+case 'Car.':
+    split[i] = "automatic mobile device that can store various things and transport them using fuel in which can be dependant on what engine the device uses such as gasoline electricity dead animals and many more.";
+    break;
+case 'car!':
+case 'Car!':
+    split[i] = "automatic mobile device that can store various things and transport them using fuel in which can be dependant on what engine the device uses such as gasoline electricity dead animals and many more!";
+    break;
+case 'car?':
+case 'Car?':
+    split[i] = "automatic mobile device that can store various things and transport them using fuel in which can be dependant on what engine the device uses such as gasoline electricity dead animals and many more?";
+    break;
+case 'car:':
+case 'Car:':
+    split[i] = "automatic mobile device that can store various things and transport them using fuel in which can be dependant on what engine the device uses such as gasoline electricity dead animals and many more:";
+    break;
+	
+//Nonsense - poppycock
+case 'nonsense':
+case 'Nonsense':
+    split[i] = "poppycock";
+    break;
+case 'nonsense,':
+case 'Nonsense,':
+    split[i] = "poppycock,";
+    break;
+case 'nonsense.':
+case 'Nonsense.':
+    split[i] = "poppycock.";
+    break;
+case 'nonsense!':
+case 'Nonsense!':
+    split[i] = "poppycock!";
+    break;
+case 'nonsense?':
+case 'Nonsense?':
+    split[i] = "poppycock?";
+    break;
+case 'nonsense:':
+case 'Nonsense:':
+    split[i] = "poppycock:";
+    break;
+
+//Nah - poppycock
+case 'nah':
+case 'Nah':
+    split[i] = "poppycock";
+    break;
+case 'nah,':
+case 'Nah,':
+    split[i] = "poppycock,";
+    break;
+case 'nah.':
+case 'Nah.':
+    split[i] = "poppycock.";
+    break;
+case 'nah!':
+case 'Nah!':
+    split[i] = "poppycock!";
+    break;
+case 'nah?':
+case 'Nah?':
+    split[i] = "poppycock?";
+    break;
+case 'nah:':
+case 'Nah:':
+    split[i] = "poppycock:";
+    break;
+	
+//Fruit - produce
+case 'fruit':
+case 'Fruit':
+    split[i] = "produce";
+    break;
+case 'fruit,':
+case 'Fruit,':
+    split[i] = "produce,";
+    break;
+case 'fruit.':
+case 'Fruit.':
+    split[i] = "produce.";
+    break;
+case 'fruit!':
+case 'Fruit!':
+    split[i] = "produce!";
+    break;
+case 'fruit?':
+case 'Fruit?':
+    split[i] = "produce?";
+    break;
+case 'fruit:':
+case 'Fruit:':
+    split[i] = "produce:";
+    break;
+
+//Vegetables - produce
+case 'vegetables':
+case 'Vegetables':
+    split[i] = "produce";
+    break;
+case 'vegetables,':
+case 'Vegetables,':
+    split[i] = "produce,";
+    break;
+case 'vegetables.':
+case 'Vegetables.':
+    split[i] = "produce.";
+    break;
+case 'vegetables!':
+case 'Vegetables!':
+    split[i] = "produce!";
+    break;
+case 'vegetables?':
+case 'Vegetables?':
+    split[i] = "produce?";
+    break;
+case 'vegetables:':
+case 'Vegetables:':
+    split[i] = "produce:";
+    break;
+	
+	
+//Shirt - clothing worn around a humans torso
+case 'shirt':
+case 'Shirt':
+    split[i] = "clothing worn around a humans torso";
+    break;
+case 'shirt,':
+case 'Shirt,':
+    split[i] = "clothing worn around a humans torso,";
+    break;
+case 'shirt.':
+case 'Shirt.':
+    split[i] = "clothing worn around a humans torso.";
+    break;
+case 'shirt!':
+case 'Shirt!':
+    split[i] = "clothing worn around a humans torso!";
+    break;
+case 'shirt?':
+case 'Shirt?':
+    split[i] = "clothing worn around a humans torso?";
+    break;
+case 'shirt:':
+case 'Shirt:':
+    split[i] = "clothing worn around a humans torso:";
+    break;
+	
+//Tie - fancy cloth fixating onto a point warn with a suit
+case 'tie':
+case 'Tie':
+    split[i] = "fancy cloth fixating onto a point warn with a suit";
+    break;
+case 'tie,':
+case 'Tie,':
+    split[i] = "fancy cloth fixating onto a point warn with a suit,";
+    break;
+case 'tie.':
+case 'Tie.':
+    split[i] = "fancy cloth fixating onto a point warn with a suit.";
+    break;
+case 'tie!':
+case 'Tie!':
+    split[i] = "fancy cloth fixating onto a point warn with a suit!";
+    break;
+case 'tie?':
+case 'Tie?':
+    split[i] = "fancy cloth fixating onto a point warn with a suit?";
+    break;
+case 'tie:':
+case 'Tie:':
+    split[i] = "fancy cloth fixating onto a point warn with a suit:";
+    break;
+	
+//Normal - informal
+case 'normal':
+case 'Normal':
+    split[i] = "informal";
+    break;
+case 'normal,':
+case 'Normal,':
+    split[i] = "informal,";
+    break;
+case 'normal.':
+case 'Normal.':
+    split[i] = "informal.";
+    break;
+case 'normal!':
+case 'Normal!':
+    split[i] = "informal!";
+    break;
+case 'normal?':
+case 'Normal?':
+    split[i] = "informal?";
+    break;
+case 'normal:':
+case 'Normal:':
+    split[i] = "informal:";
+    break;
+	
+//Regular - casual
+case 'regular':
+case 'Regular':
+    split[i] = "casual";
+    break;
+case 'regular,':
+case 'Regular,':
+    split[i] = "casual,";
+    break;
+case 'regular.':
+case 'Regular.':
+    split[i] = "casual.";
+    break;
+case 'regular!':
+case 'Regular!':
+    split[i] = "casual!";
+    break;
+case 'regular?':
+case 'Regular?':
+    split[i] = "casual?";
+    break;
+case 'regular:':
+case 'Regular:':
+    split[i] = "casual:";
+    break;
+	
+//Swagy - hipster
+/*
+case 'swagy':
+case 'Swagy':
+    split[i] = "hipster";
+    break;
+case 'swagy,':
+case 'Swagy,':
+    split[i] = "hipster,";
+    break;
+case 'swagy.':
+case 'Swagy.':
+    split[i] = "hipster.";
+    break;
+case 'swagy!':
+case 'Swagy!':
+    split[i] = "hipster!";
+    break;
+case 'swagy?':
+case 'Swagy?':
+    split[i] = "hipster?";
+    break;
+case 'swagy:':
+case 'Swagy:':
+    split[i] = "hipster:";
+    break;
+	*/
+
+//Hipster - one with a cool look fitting the time period
+case 'hipster':
+case 'Hipster':
+    split[i] = "one with a cool look fitting the time period";
+    break;
+case 'hipster,':
+case 'Hipster,':
+    split[i] = "one with a cool look fitting the time period,";
+    break;
+case 'hipster.':
+case 'Hipster.':
+    split[i] = "one with a cool look fitting the time period.";
+    break;
+case 'hipster!':
+case 'Hipster!':
+    split[i] = "one with a cool look fitting the time period!";
+    break;
+case 'hipster?':
+case 'Hipster?':
+    split[i] = "one with a cool look fitting the time period?";
+    break;
+case 'hipster:':
+case 'Hipster:':
+    split[i] = "one with a cool look fitting the time period:";
+    break;
+
+//Ball - sphere
+case 'ball':
+case 'Ball':
+    split[i] = "sphere";
+    break;
+case 'ball,':
+case 'Ball,':
+    split[i] = "sphere,";
+    break;
+case 'ball.':
+case 'Ball.':
+    split[i] = "sphere.";
+    break;
+case 'ball!':
+case 'Ball!':
+    split[i] = "sphere!";
+    break;
+case 'ball?':
+case 'Ball?':
+    split[i] = "sphere?";
+    break;
+case 'ball:':
+case 'Ball:':
+    split[i] = "sphere:";
+    break;
+	
+//Love - tenderness
+case 'love':
+case 'Love':
+    split[i] = "tenderness";
+    break;
+case 'love,':
+case 'Love,':
+    split[i] = "tenderness,";
+    break;
+case 'love.':
+case 'Love.':
+    split[i] = "tenderness.";
+    break;
+case 'love!':
+case 'Love!':
+    split[i] = "tenderness!";
+    break;
+case 'love?':
+case 'Love?':
+    split[i] = "tenderness?";
+    break;
+case 'love:':
+case 'Love:':
+    split[i] = "tenderness:";
+    break;
+	
+//Flying - floating and levitating but also having the ability to alter its own altitude and direction it is levitating hovering floating in
+case 'flying':
+case 'Flying':
+    split[i] = "floating and levitating but also having the ability to alter its own altitude and direction it is levitating hovering floating in";
+    break;
+case 'flying,':
+case 'Flying,':
+    split[i] = "floating and levitating but also having the ability to alter its own altitude and direction it is levitating hovering floating in,";
+    break;
+case 'flying.':
+case 'Flying.':
+    split[i] = "floating and levitating but also having the ability to alter its own altitude and direction it is levitating hovering floating in.";
+    break;
+case 'flying!':
+case 'Flying!':
+    split[i] = "floating and levitating but also having the ability to alter its own altitude and direction it is levitating hovering floating in!";
+    break;
+case 'flying?':
+case 'Flying?':
+    split[i] = "floating and levitating but also having the ability to alter its own altitude and direction it is levitating hovering floating in?";
+    break;
+case 'flying:':
+case 'Flying:':
+    split[i] = "floating and levitating but also having the ability to alter its own altitude and direction it is levitating hovering floating in:";
+    break;
+
+//Book - compilation of words
+case 'book':
+case 'Book':
+    split[i] = "compilation of words";
+    break;
+case 'book,':
+case 'Book,':
+    split[i] = "compilation of words,";
+    break;
+case 'book.':
+case 'Book.':
+    split[i] = "compilation of words.";
+    break;
+case 'book!':
+case 'Book!':
+    split[i] = "compilation of words!";
+    break;
+case 'book?':
+case 'Book?':
+    split[i] = "compilation of words?";
+    break;
+case 'book:':
+case 'Book:':
+    split[i] = "compilation of words:";
+    break;
+	
+//Women - female human of age older than 18 CHANGED
+case 'woman':
+case 'Woman':
+    split[i] = "female human with an age of over 18";
+    break;
+case 'woman,':
+case 'Woman,':
+    split[i] = "female human with an age of over 18,";
+    break;
+case 'woman.':
+case 'Woman.':
+    split[i] = "female human with an age of over 18.";
+    break;
+case 'woman!':
+case 'Woman!':
+    split[i] = "female human with an age of over 18!";
+    break;
+case 'woman?':
+case 'Woman?':
+    split[i] = "female human with an age of over 18?";
+    break;
+case 'woman:':
+case 'Woman:':
+    split[i] = "female human with an age of over 18:";
+    break;
+	
+//Eye - spherical object capable of processing a certain range of waves in the electromagnetic spectrum
+case 'ear':
+case 'Ear':
+    split[i] = "body part allowing you to comprehend vibrations in the air caused by movement";
+    break;
+case 'ear,':
+case 'Ear,':
+    split[i] = "body part allowing you to comprehend vibrations in the air caused by movement,";
+    break;
+case 'ear.':
+case 'Ear.':
+    split[i] = "body part allowing you to comprehend vibrations in the air caused by movement.";
+    break;
+case 'ear!':
+case 'Ear!':
+    split[i] = "body part allowing you to comprehend vibrations in the air caused by movement!";
+    break;
+case 'ear?':
+case 'Ear?':
+    split[i] = "body part allowing you to comprehend vibrations in the air caused by movement?";
+    break;
+case 'ear:':
+case 'Ear:':
+    split[i] = "body part allowing you to comprehend vibrations in the air caused by movement:";
+    break;
+
+//Child - any gender human of young agecase 'child':
+case 'Child':
+    split[i] = "any gender human of young age";
+    break;
+case 'child,':
+case 'Child,':
+    split[i] = "any gender human of young age,";
+    break;
+case 'child.':
+case 'Child.':
+    split[i] = "any gender human of young age.";
+    break;
+case 'child!':
+case 'Child!':
+    split[i] = "any gender human of young age!";
+    break;
+case 'child?':
+case 'Child?':
+    split[i] = "any gender human of young age?";
+    break;
+case 'child:':
+case 'Child:':
+    split[i] = "any gender human of young age:";
+    break;
+
+//baby - any gender of human of extremely young age
+case 'baby':
+case 'Baby':
+    split[i] = "any gender human of extremely young age";
+    break;
+case 'baby,':
+case 'Baby,':
+    split[i] = "any gender human of extremely young age,";
+    break;
+case 'baby.':
+case 'Baby.':
+    split[i] = "any gender human of extremely young age.";
+    break;
+case 'baby!':
+case 'Baby!':
+    split[i] = "any gender human of extremely young age!";
+    break;
+case 'baby?':
+case 'Baby?':
+    split[i] = "any gender human of extremely young age?";
+    break;
+case 'baby:':
+case 'Baby:':
+    split[i] = "any gender human of extremely young age:";
+    break;
+
+//Calculator - hand held computing device capable of processing numbers in various ways
+case 'calculator':
+case 'Calculator':
+    split[i] = "hand held computing device capable of processing numbers in various ways";
+    break;
+case 'calculator,':
+case 'Calculator,':
+    split[i] = "hand held computing device capable of processing numbers in various ways,";
+    break;
+case 'calculator.':
+case 'Calculator.':
+    split[i] = "hand held computing device capable of processing numbers in various ways.";
+    break;
+case 'calculator!':
+case 'Calculator!':
+    split[i] = "hand held computing device capable of processing numbers in various ways!";
+    break;
+case 'calculator?':
+case 'Calculator?':
+    split[i] = "hand held computing device capable of processing numbers in various ways?";
+    break;
+case 'calculator:':
+case 'Calculator:':
+    split[i] = "hand held computing device capable of processing numbers in various ways:";
+    break;
+	
+//IPhone - a hand held computing device incompetent of running many applications or other various tasks without error (Cap P)
+case 'iPhone':
+case 'IPhone':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error";
+    break;
+case 'iPhone,':
+case 'IPhone,':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error,";
+    break;
+case 'iPhone.':
+case 'IPhone.':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error.";
+    break;
+case 'iPhone!':
+case 'IPhone!':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error!";
+    break;
+case 'iPhone?':
+case 'IPhone?':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error?";
+    break;
+case 'iPhone:':
+case 'IPhone:':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error:";
+    break;
+
+//Iphone - a hand held computing device incompetent of running many applications or other various tasks without error (Non-Cap P)
+case 'iphone':
+case 'Iphone':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error";
+    break;
+case 'iphone,':
+case 'Iphone,':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error,";
+    break;
+case 'iphone.':
+case 'Iphone.':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error.";
+    break;
+case 'iphone!':
+case 'Iphone!':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error!";
+    break;
+case 'iphone?':
+case 'Iphone?':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error?";
+    break;
+case 'iphone:':
+case 'Iphone:':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error:";
+    break;
+	
+//IPod - a hand held computing device incompetent of running many applications or other various tasks without error (Cap P)
+case 'iPod':
+case 'IPod':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error";
+    break;
+case 'iPod,':
+case 'IPod,':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error,";
+    break;
+case 'iPod.':
+case 'IPod.':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error.";
+    break;
+case 'iPod!':
+case 'IPod!':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error!";
+    break;
+case 'iPod?':
+case 'IPod?':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error?";
+    break;
+case 'iPod:':
+case 'IPod:':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error:";
+    break;
+	
+//Ipod - a hand held computing device incompetent of running many applications or other various tasks without error (Non-Cap P)
+case 'ipod':
+case 'Ipod':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error";
+    break;
+case 'ipod,':
+case 'Ipod,':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error,";
+    break;
+case 'ipod.':
+case 'Ipod.':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error.";
+    break;
+case 'ipod!':
+case 'Ipod!':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error!";
+    break;
+case 'ipod?':
+case 'Ipod?':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error?";
+    break;
+case 'ipod:':
+case 'Ipod:':
+    split[i] = "a hand held computing device incompetent of running many applications or other various tasks without error:";
+    break;
+	
+//IPad - gigantic ignorant hand held computing device incompetent of running many applications or other various tasks without error (Cap p)
+case 'iPad':
+case 'IPad':
+    split[i] = "gigantic ignorant hand held computing device incompetent of running many applications or other various tasks without error";
+    break;
+case 'iPad,':
+case 'IPad,':
+    split[i] = "gigantic ignorant hand held computing device incompetent of running many applications or other various tasks without error,";
+    break;
+case 'iPad.':
+case 'IPad.':
+    split[i] = "gigantic ignorant hand held computing device incompetent of running many applications or other various tasks without error.";
+    break;
+case 'iPad!':
+case 'IPad!':
+    split[i] = "gigantic ignorant hand held computing device incompetent of running many applications or other various tasks without error!";
+    break;
+case 'iPad?':
+case 'IPad?':
+    split[i] = "gigantic ignorant hand held computing device incompetent of running many applications or other various tasks without error?";
+    break;
+case 'iPad:':
+case 'IPad:':
+    split[i] = "gigantic ignorant hand held computing device incompetent of running many applications or other various tasks without error:";
+    break;
+
+//Ipad - gigantic ignorant hand held computing device incompetent of running many applications or other various tasks without error (Non-Cap p)
+case 'ipad':
+case 'Ipad':
+    split[i] = "gigantic ignorant hand held computing device incompetent of running many applications or other various tasks without error";
+    break;
+case 'ipad,':
+case 'Ipad,':
+    split[i] = "gigantic ignorant hand held computing device incompetent of running many applications or other various tasks without error,";
+    break;
+case 'ipad.':
+case 'Ipad.':
+    split[i] = "gigantic ignorant hand held computing device incompetent of running many applications or other various tasks without error.";
+    break;
+case 'ipad!':
+case 'Ipad!':
+    split[i] = "gigantic ignorant hand held computing device incompetent of running many applications or other various tasks without error!";
+    break;
+case 'ipad?':
+case 'Ipad?':
+    split[i] = "gigantic ignorant hand held computing device incompetent of running many applications or other various tasks without error?";
+    break;
+case 'ipad:':
+case 'Ipad:':
+    split[i] = "gigantic ignorant hand held computing device incompetent of running many applications or other various tasks without error:";
+    break;
+	
+//Macintosh - **%*$@**% do not say its really weak and insolent name!!!
+case 'macintosh':
+case 'Macintosh':
+    split[i] = "**%*$@**% do not say its really weak and insolent name!!!";
+    break;
+case 'macintosh,':
+case 'Macintosh,':
+    split[i] = "**%*$@**% do not say its really weak and insolent name!!!,";
+    break;
+case 'macintosh.':
+case 'Macintosh.':
+    split[i] = "**%*$@**% do not say its really weak and insolent name!!!.";
+    break;
+case 'macintosh!':
+case 'Macintosh!':
+    split[i] = "**%*$@**% do not say its really weak and insolent name!!!!";
+    break;
+case 'macintosh?':
+case 'Macintosh?':
+    split[i] = "**%*$@**% do not say its really weak and insolent name!!!?";
+    break;
+case 'macintosh:':
+case 'Macintosh:':
+    split[i] = "**%*$@**% do not say its really weak and insolent name!!!:";
+    break;
+	
+//Microsoft - Microsoft, the glorious makers of the best modern technology and is better than **%*$@**% do not say its really weak and insolent name!!!
+case 'microsoft':
+case 'Microsoft':
+    split[i] = "Microsoft, the glorious makers of the best modern technology and is better than **%*$@**% do not say its really weak and insolent name!!!";
+    break;
+case 'microsoft,':
+case 'Microsoft,':
+    split[i] = "Microsoft, the glorious makers of the best modern technology and is better than **%*$@**% do not say its really weak and insolent name!!!,";
+    break;
+case 'microsoft.':
+case 'Microsoft.':
+    split[i] = "Microsoft, the glorious makers of the best modern technology and is better than **%*$@**% do not say its really weak and insolent name!!!.";
+    break;
+case 'microsoft!':
+case 'Microsoft!':
+    split[i] = "Microsoft, the glorious makers of the best modern technology and is better than **%*$@**% do not say its really weak and insolent name!!!!";
+    break;
+case 'microsoft?':
+case 'Microsoft?':
+    split[i] = "Microsoft, the glorious makers of the best modern technology and is better than **%*$@**% do not say its really weak and insolent name!!!?";
+    break;
+case 'microsoft:':
+case 'Microsoft:':
+    split[i] = "Microsoft, the glorious makers of the best modern technology and is better than **%*$@**% do not say its really weak and insolent name!!!:";
+    break;
+
+//Human - animal with the ability to walk on two legs and carry out numerous more tasks than any other animal
+case 'human':
+case 'Human':
+    split[i] = "animal with the ability to walk on two legs and carry out numerous more tasks than any other animal";
+    break;
+case 'human,':
+case 'Human,':
+    split[i] = "animal with the ability to walk on two legs and carry out numerous more tasks than any other animal,";
+    break;
+case 'human.':
+case 'Human.':
+    split[i] = "animal with the ability to walk on two legs and carry out numerous more tasks than any other animal.";
+    break;
+case 'human!':
+case 'Human!':
+    split[i] = "animal with the ability to walk on two legs and carry out numerous more tasks than any other animal!";
+    break;
+case 'human?':
+case 'Human?':
+    split[i] = "animal with the ability to walk on two legs and carry out numerous more tasks than any other animal?";
+    break;
+case 'human:':
+case 'Human:':
+    split[i] = "animal with the ability to walk on two legs and carry out numerous more tasks than any other animal:";
+    break;
+	
+//Mouth - facial muscle showing expressions of emotion and ability to insert various energy sustaining material into the system
+case 'mouth':
+case 'Mouth':
+    split[i] = "facial muscle showing expressions of emotion and ability to insert various energy sustaining material into the system";
+    break;
+case 'mouth,':
+case 'Mouth,':
+    split[i] = "facial muscle showing expressions of emotion and ability to insert various energy sustaining material into the system,";
+    break;
+case 'mouth.':
+case 'Mouth.':
+    split[i] = "facial muscle showing expressions of emotion and ability to insert various energy sustaining material into the system.";
+    break;
+case 'mouth!':
+case 'Mouth!':
+    split[i] = "facial muscle showing expressions of emotion and ability to insert various energy sustaining material into the system!";
+    break;
+case 'mouth?':
+case 'Mouth?':
+    split[i] = "facial muscle showing expressions of emotion and ability to insert various energy sustaining material into the system?";
+    break;
+case 'mouth:':
+case 'Mouth:':
+    split[i] = "facial muscle showing expressions of emotion and ability to insert various energy sustaining material into the system:";
+    break;
+
+//Object - matter
+case 'object':
+case 'Object':
+    split[i] = "matter";
+    break;
+case 'object,':
+case 'Object,':
+    split[i] = "matter,";
+    break;
+case 'object.':
+case 'Object.':
+    split[i] = "matter.";
+    break;
+case 'object!':
+case 'Object!':
+    split[i] = "matter!";
+    break;
+case 'object?':
+case 'Object?':
+    split[i] = "matter?";
+    break;
+case 'object:':
+case 'Object:':
+    split[i] = "matter:";
+    break;
+
+//Toy - form of matter meant to be played with
+case 'toy':
+case 'Toy':
+    split[i] = "form of matter meant to be played with";
+    break;
+case 'toy,':
+case 'Toy,':
+    split[i] = "form of matter meant to be played with,";
+    break;
+case 'toy.':
+case 'Toy.':
+    split[i] = "form of matter meant to be played with.";
+    break;
+case 'toy!':
+case 'Toy!':
+    split[i] = "form of matter meant to be played with!";
+    break;
+case 'toy?':
+case 'Toy?':
+    split[i] = "form of matter meant to be played with?";
+    break;
+case 'toy:':
+case 'Toy:':
+    split[i] = "form of matter meant to be played with:";
+    break;
+
+//Play - conjure in fun activities
+case 'play':
+case 'Play':
+    split[i] = "conjure in fun activities";
+    break;
+case 'play,':
+case 'Play,':
+    split[i] = "conjure in fun activities,";
+    break;
+case 'play.':
+case 'Play.':
+    split[i] = "conjure in fun activities.";
+    break;
+case 'play!':
+case 'Play!':
+    split[i] = "conjure in fun activities!";
+    break;
+case 'play?':
+case 'Play?':
+    split[i] = "conjure in fun activities?";
+    break;
+case 'play:':
+case 'Play:':
+    split[i] = "conjure in fun activities:";
+    break;
+	
+//Waffle - lattice shaped breakfast pastry
+case 'waffle':
+case 'Waffle':
+    split[i] = "lattice shaped breakfast pastry";
+    break;
+case 'waffle,':
+case 'Waffle,':
+    split[i] = "lattice shaped breakfast pastry,";
+    break;
+case 'waffle.':
+case 'Waffle.':
+    split[i] = "lattice shaped breakfast pastry.";
+    break;
+case 'waffle!':
+case 'Waffle!':
+    split[i] = "lattice shaped breakfast pastry!";
+    break;
+case 'waffle?':
+case 'Waffle?':
+    split[i] = "lattice shaped breakfast pastry?";
+    break;
+case 'waffle:':
+case 'Waffle:':
+    split[i] = "lattice shaped breakfast pastry:";
+    break;
+
+//Apple - oblong red produce
+case 'apple':
+case 'Apple':
+    split[i] = "oblong red produce";
+    break;
+case 'apple,':
+case 'Apple,':
+    split[i] = "oblong red produce,";
+    break;
+case 'apple.':
+case 'Apple.':
+    split[i] = "oblong red produce.";
+    break;
+case 'apple!':
+case 'Apple!':
+    split[i] = "oblong red produce!";
+    break;
+case 'apple?':
+case 'Apple?':
+    split[i] = "oblong red produce?";
+    break;
+case 'apple:':
+case 'Apple:':
+    split[i] = "oblong red produce:";
+    break;
+
+//Banana - long Yellow crescent form of produce
+case 'banana':
+case 'Banana':
+    split[i] = "long Yellow crescent form of produce";
+    break;
+case 'banana,':
+case 'Banana,':
+    split[i] = "long Yellow crescent form of produce,";
+    break;
+case 'banana.':
+case 'Banana.':
+    split[i] = "long Yellow crescent form of produce.";
+    break;
+case 'banana!':
+case 'Banana!':
+    split[i] = "long Yellow crescent form of produce!";
+    break;
+case 'banana?':
+case 'Banana?':
+    split[i] = "long Yellow crescent form of produce?";
+    break;
+case 'banana:':
+case 'Banana:':
+    split[i] = "long Yellow crescent form of produce:";
+    break;
+
+//Watermelon - red oblong sphere covered in a green inedible layer
+case 'watermelon':
+case 'Watermelon':
+    split[i] = "red oblong sphere covered in a green inedible layer";
+    break;
+case 'watermelon,':
+case 'Watermelon,':
+    split[i] = "red oblong sphere covered in a green inedible layer,";
+    break;
+case 'watermelon.':
+case 'Watermelon.':
+    split[i] = "red oblong sphere covered in a green inedible layer.";
+    break;
+case 'watermelon!':
+case 'Watermelon!':
+    split[i] = "red oblong sphere covered in a green inedible layer!";
+    break;
+case 'watermelon?':
+case 'Watermelon?':
+    split[i] = "red oblong sphere covered in a green inedible layer?";
+    break;
+case 'watermelon:':
+case 'Watermelon:':
+    split[i] = "red oblong sphere covered in a green inedible layer:";
+    break;
+
+//Make - conjure
+case 'make':
+case 'Make':
+    split[i] = "conjure";
+    break;
+case 'make,':
+case 'Make,':
+    split[i] = "conjure,";
+    break;
+case 'make.':
+case 'Make.':
+    split[i] = "conjure.";
+    break;
+case 'make!':
+case 'Make!':
+    split[i] = "conjure!";
+    break;
+case 'make?':
+case 'Make?':
+    split[i] = "conjure?";
+    break;
+case 'make:':
+case 'Make:':
+    split[i] = "conjure:";
+    break;
+			}
+		}
+	    document.getElementById('decoded').innerHTML = split.join(" ");
+    }
+</script>
+</head>
+<body>
+    <!-- stop looking at my source! -->
+    <center>
+        <div id="cool" align="center">
+            <div class="content">
+                
+<h1>Fancy Text Converter</h1>
+
+                <div class="content">
+                    
+<h1>Enter Boring Word:</h1>
+
+                    <textarea onkeyup="decode();" rows="1" cols="1" width="200" onchange="decode();" id="codetwo"></textarea>
+                    <div id="bubblecontainer" align="center">
+                        <div id="decoded" align="center"></div>
+                    </div>
+                </div>
+            </div>by:specialsteven and Sportsquid. <br> modified by PaintedEevee
+            <br>Warning! not everything is accurate, not all words will work like homophones/homonyms and also please use lowercase or it will not work</center>
+    <br>
+    <br>
+</body>
+
+</html>
